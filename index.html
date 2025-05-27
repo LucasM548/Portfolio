@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Martinati - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <header class="main-header">
+        <div class="logo">// LM_</div>
+        <nav>
+            <ul>
+                <li><a href="#work">// Work</a></li>
+                <li><a href="#about">// About</a></li>
+                <li><a href="#contact">// Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="portfolio-container">
+
+        <section id="hero">
+            <h1>Lucas Martinati</h1>
+            <p class="tagline">Étudiant à Epitech | Développeur web</p>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="timeline"></div>
+
+            <div class="project-card reveal">
+                 <div class="timeline-marker"></div>
+                 <div class="card-content">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/1a1a2e/e0e0e0?text=Project+Visual+1" alt="Project 1 Visual">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-year">2023 - Present</span>
+                        <h2>Project Title One</h2>
+                        <p>Brief description of the project, focusing on the challenge and the innovative solution implemented.</p>
+                        <div class="tags">
+                            <span>React</span><span>Node.js</span><span>Web Sockets</span><span>UI/UX</span>
+                        </div>
+                        <a href="#" class="project-link" target="_blank">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                 <div class="timeline-marker"></div>
+                 <div class="card-content">
+                     <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/2a2a3e/e0e0e0?text=Project+Visual+2" alt="Project 2 Visual">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-year">2021 - 2022</span>
+                        <h2>Another Creative Project</h2>
+                        <p>Elaborate on the technology stack and the unique features developed for this web application or website.</p>
+                         <div class="tags">
+                            <span>Vue.js</span><span>TypeScript</span><span>Figma</span><span>Firebase</span>
+                        </div>
+                        <a href="#" class="project-link" target="_blank">Case Study →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                 <div class="timeline-marker"></div>
+                 <div class="card-content">
+                     <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/3a3a4e/e0e0e0?text=Project+Visual+3" alt="Project 3 Visual">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-year">2019 - 2020</span>
+                        <h2>Experimental UI Concept</h2>
+                        <p>Showcasing frontend skills with complex animations and state management for an interactive experience.</p>
+                         <div class="tags">
+                            <span>Three.js</span><span>GSAP</span><span>Frontend</span><span>WebGL</span>
+                        </div>
+                         <a href="#" class="project-link" target="_blank">Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards as needed -->
+
+        </section>
+
+        <section id="about" class="reveal">
+            <h2>// About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate Creative Developer with [X] years of experience, specializing in crafting elegant, high-performance web experiences. I thrive on solving complex problems and turning innovative ideas into reality using modern technologies.</p>
+                <p>My focus is on clean code, intuitive user interfaces, and pushing the boundaries of what's possible on the web. Continuously learning and experimenting with new tools and techniques.</p>
+                <!-- Add more about yourself -->
+                 <div class="skills-overview">
+                    <h3>Core Skills:</h3>
+                    <span>HTML5 / CSS3 / SCSS</span>
+                    <span>UI/UX Principles</span>
+                    <span>Performance Optimization</span>
+                    <span>Git</span>
+                 </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2>// Let's Connect</h2>
+            <p>Interested in collaborating or have a question? Feel free to reach out.</p>
+            <a href="mailto:lucasm54800@gmail.com" class="email-link">lucasm54800@gmail.com</a>
+            <div class="social-links">
+                <a href="#" target="_blank" title="GitHub">
+                    <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">...</svg> <!-- Replace with actual SVG icon -->
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">...</svg> <!-- Replace with actual SVG icon -->
+                </a>
+                 <a href="#" target="_blank" title="Twitter / X">
+                     <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">...</svg> <!-- Replace with actual SVG icon -->
+                 </a>
+                <!-- Add other relevant links -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer-bottom">
+        <p> 2024 Lucas Martinati. Designed & Built with <span style="color: #ff6b6b;">♥</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
