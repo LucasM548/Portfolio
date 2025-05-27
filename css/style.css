@@ -11,6 +11,8 @@
   --font-primary: 'Space Grotesk', sans-serif;
   --font-secondary: 'Inter', sans-serif;
   --header-height: 60px;
+  --mouse-x: 50%; /* Default to center */
+  --mouse-y: 50%; /* Default to center */
 }
 
 * {
@@ -22,6 +24,22 @@
 html {
   scroll-behavior: smooth;
 }
+
+/*
+  ACCESSIBILITY CHECKPOINT:
+  Ensure that all interactive elements (links, buttons, project cards, etc.)
+  have clear and visible keyboard focus indicators.
+  Browsers provide default outlines, but if they have been reset or are not
+  sufficiently visible against the dark background, add custom focus styles.
+  For example:
+  a:focus,
+  .hamburger-menu:focus,
+  .project-card a:focus {
+    outline: 2px solid var(--primary-accent);
+    outline-offset: 2px;
+  }
+  Adjust the style to fit the design, ensuring good contrast.
+*/
 
 body {
   background-color: var(--bg-color);
@@ -39,7 +57,7 @@ body {
   left: 10%;
   width: 60vmax; /* Large size */
   height: 60vmax;
-  background: radial-gradient(circle, rgba(0, 255, 255, 0.08) 0%, rgba(0, 255, 255, 0) 60%);
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(0, 255, 255, 0.08) 0%, rgba(0, 255, 255, 0) 60%);
   filter: blur(100px); /* Strong blur */
   opacity: 0.7;
   z-index: -1; /* Behind content */
@@ -458,6 +476,89 @@ h2 {
   transform: translateY(0);
 }
 
+/* --- Hamburger Menu --- */
+.hamburger-menu {
+  display: none; /* Hidden by default, shown in media query */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 110; /* Ensure it's above other header elements */
+}
+
+.hamburger-menu .bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-color);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger animation to 'X' when active */
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg); /* Adjusted to 8px for a 25px height */
+}
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg); /* Adjusted to -8px for a 25px height */
+}
+
+/* --- Mobile Navigation Menu --- */
+.mobile-nav {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  top: var(--header-height); /* Position below the header */
+  left: 0;
+  width: 100%;
+  background-color: rgba(11, 11, 16, 0.95); /* Slightly more opaque */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 105; /* Below hamburger but above content */
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.mobile-nav.open {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.mobile-nav ul li {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.mobile-nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-size: 1.2rem; /* Larger for mobile */
+  padding: 10px;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.mobile-nav ul li a:hover {
+  color: var(--primary-accent);
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
 /* --- Responsiveness --- */
 @media (max-width: 900px) {
   .timeline {
@@ -514,7 +615,13 @@ h2 {
   #hero .tagline { font-size: 1rem; }
   section { padding: 60px 5%; }
   .main-header { padding: 0 3%; }
-  .main-header nav { display: none; } /* Simple hide for mobile, implement burger menu if needed */
+  
+  #desktopNav { /* Hide desktop nav */
+    display: none !important; 
+  }
+  .hamburger-menu { /* Show hamburger */
+    display: flex;
+  }
 
    .project-card .card-content { padding: 20px; }
 }
