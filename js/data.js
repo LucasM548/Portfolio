@@ -77,6 +77,7 @@ const skills = [
 const projects = [
   {
     image: '🍐',
+    imageUrl: 'img/pear search cover.png',
     year: '2023',
     status: { label: 'Terminé', className: 'status-completed' },
     title: 'Pear Search',
@@ -87,6 +88,7 @@ const projects = [
   },
   {
     image: '📥',
+    imageUrl: 'img/applications automatical installer cover.png',
     year: '2024',
     status: { label: 'Terminé', className: 'status-completed' },
     title: 'Applications Automatical Installer',
@@ -107,6 +109,7 @@ const projects = [
   },
   {
     image: '🎮',
+    imageUrl: 'img/report with wintrchess cover.png',
     year: '2025',
     status: { label: 'Terminé', className: 'status-completed' },
     title: 'Report with WintrChess',
@@ -146,7 +149,7 @@ function renderProjects(list) {
       (p) => `
       <div class="project-item">
         <div class="project-card">
-          <div class="project-image">${p.image}</div>
+          <div class="project-image ${p.imageUrl ? 'has-cover' : ''}">${p.imageUrl ? '<img src="' + p.imageUrl + '" alt="' + p.title + '" class="project-cover">' : (p.image || '')}</div>
           <div class="project-content">
             <div class="project-meta">
               <span class="project-year">${p.year}</span>
@@ -158,7 +161,7 @@ function renderProjects(list) {
               <div class="project-tags">
                 ${p.tags.map((t) => `<span class="tag">${t}</span>`).join('')}
               </div>
-              <a href="${p.link.href}" class="project-link">${p.link.text}</a>
+              <a href="${p.link.href}" class="project-link" target="_blank" rel="noopener noreferrer">${p.link.text}</a>
             </div>
           </div>
         </div>
