@@ -114,7 +114,7 @@ const projects = [
     status: { label: 'Terminé', className: 'status-completed' },
     title: 'Report with WintrChess',
     description:
-      "Transférez facilement vos parties d’échecs depuis Lichess et Chess.com vers WintrChess pour une analyse approfondie. Disponible sous forme de script Tampermonkey et d’extension Chrome.",
+      "Transférez facilement vos parties d’échecs depuis Lichess et Chess.com vers WintrChess pour une analyse approfondie. Disponible sous forme d'extension Chrome.",
     tags: ['Chrome extension', 'js'],
     link: { href: 'https://chromewebstore.google.com/detail/free-analyze-with-wintrch/ljjbgidgpkhjenpgpjfjidfflnelmpan', text: 'Chrome web store' }
   },
