@@ -1,179 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="YOUR_PORTFOLIO_DESCRIPTION - A brief summary of your skills, services, and what makes your work unique.">
-    <meta name="keywords" content="YOUR_KEYWORDS, e.g., Web Developer, Frontend Developer, Backend Developer, UI/UX, Your Name, Portfolio, Specific Technologies like React, Node.js">
-    <meta name="author" content="Lucas Martinati">
-    
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Lucas Martinati - Portfolio">
-    <meta property="og:description" content="YOUR_PORTFOLIO_DESCRIPTION - Same as your meta description or a slightly adapted version for social context.">
-    <meta property="og:image" content="URL_TO_YOUR_PREVIEW_IMAGE">
-    <meta property="og:url" content="YOUR_WEBSITE_URL">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lucas Martinati - Portfolio">
-    <meta name="twitter:description" content="YOUR_PORTFOLIO_DESCRIPTION">
-    <meta name="twitter:image" content="URL_TO_YOUR_PREVIEW_IMAGE">
-    
-    <title>Lucas Martinati - Portfolio</title>
-    <link rel="icon" href="YOUR_FAVICON.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Lucas Martinati - Développeur Créatif</title>
+ <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="background-glow"></div>
+ <div class="animated-bg">
+  <div class="mouse-glow"></div>
+  <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+</div>
 
-    <header class="main-header">
-        <div class="logo">// LM_</div>
-        <nav id="desktopNav">
-            <ul>
-                <li><a href="#work">// Work</a></li>
-                <li><a href="#about">// About</a></li>
-                <li><a href="#contact">// Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger-menu" id="hamburgerMenu" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+<header>
+    <nav>
+  <div class="logo">LM_DEV</div>
+  <ul class="nav-links">
+   <li><a href="#about">À propos</a></li>
+   <li><a href="#projects">Projets</a></li>
+  </ul>
+ </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Lucas Martinati</h1>
+        <p class="subtitle">Développeur Créatif & Étudiant Passionné</p>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Faire défiler vers le contenu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">À propos</h2>
+    <div class="code-bio">
+        <div class="code-header">
+            <div class="code-dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <div class="file-name">lucas-martinati.js</div>
         </div>
-        <nav class="mobile-nav" id="mobileNav">
-            <ul>
-                <li><a href="#work">// Work</a></li>
-                <li><a href="#about">// About</a></li>
-                <li><a href="#contact">// Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="portfolio-container">
-
-        <section id="hero">
-            <h1>Lucas Martinati</h1>
-            <p class="tagline">Étudiant à Epitech | Développeur web</p>
-            <div class="scroll-indicator">
-                <span>Scroll Down</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+        <div class="code-content">
+            <div class="code-line">
+                <span class="line-number">01</span>
+                <span class="keyword">const</span> <span class="property">developer</span> = {
             </div>
-        </section>
+            <div class="code-line">
+                <span class="line-number">02</span>
+                &nbsp;&nbsp;<span class="property">name</span>: <span class="string">'Lucas Martinati'</span>,
+            </div>
+            <div class="code-line">
+                <span class="line-number">03</span>
+                &nbsp;&nbsp;<span class="property">status</span>: <span class="string">'Étudiant & Développeur'</span>,
+            </div>
+            <div class="code-line">
+                <span class="line-number">04</span>
+                &nbsp;&nbsp;<span class="property">passion</span>: <span class="string">'Créer des expériences digitales uniques'</span>,
+            </div>
+            <div class="code-line">
+                <span class="line-number">05</span>
+                &nbsp;&nbsp;<span class="property">skills</span>: [<span class="string">'JavaScript'</span>, <span class="string">'React'</span>, <span class="string">'Node.js'</span>, <span class="string">'UI/UX'</span>],
+            </div>
+            <div class="code-line">
+                <span class="line-number">06</span>
+                &nbsp;&nbsp;<span class="property">mindset</span>: <span class="string">'Apprendre constamment et innover'</span>,
+            </div>
+            <div class="code-line">
+                <span class="line-number">07</span>
+                &nbsp;&nbsp;<span class="property">currentFocus</span>: <span class="string">'Technologies modernes & Design créatif'</span>,
+            </div>
+            <div class="code-line">
+                <span class="line-number">08</span>
+                &nbsp;&nbsp;<span class="property">availability</span>: <span class="value">true</span>,
+            </div>
+            <div class="code-line">
+                <span class="line-number">09</span>
+                &nbsp;&nbsp;<span class="property">email</span>: <span class="string">'lucasm54800@gmail.com'</span>
+            </div>
+            <div class="code-line">
+                <span class="line-number">10</span>
+                };
+            </div>
+            <div class="code-line">
+                <span class="line-number">11</span>
+            </div>
+            <div class="code-line">
+                <span class="line-number">12</span>
+                <span class="comment">// Prêt à collaborer sur des projets innovants !</span>
+            </div>
+        </div>
+    </div>
 
-        <section id="work">
-            <div class="timeline"></div>
+    <div class="skills-container">
+        <div class="skill-card">
+            <div class="skill-header">
+                <div class="skill-icon">⚡</div>
+                <div class="skill-title">JavaScript ES6+</div>
+            </div>
+            <p class="skill-description">Développement moderne avec les dernières fonctionnalités JavaScript, programmation asynchrone et manipulation du DOM avancée.</p>
+            <div class="skill-tags">
+                <span class="skill-tag">ES6+</span>
+                <span class="skill-tag">Async/Await</span>
+                <span class="skill-tag">APIs</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-header">
+                <div class="skill-icon">⚛️</div>
+                <div class="skill-title">React & Ecosystem</div>
+            </div>
+            <p class="skill-description">Création d'interfaces utilisateur dynamiques et réactives avec React, Redux et les hooks modernes pour une expérience optimale.</p>
+            <div class="skill-tags">
+                <span class="skill-tag">Hooks</span>
+                <span class="skill-tag">Redux</span>
+                <span class="skill-tag">Context API</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-header">
+                <div class="skill-icon">🎨</div>
+                <div class="skill-title">UI/UX Design</div>
+            </div>
+            <p class="skill-description">Conception d'expériences utilisateur intuitives et esthétiques, de la recherche utilisateur au prototype interactif.</p>
+            <div class="skill-tags">
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Prototyping</span>
+                <span class="skill-tag">User Research</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-header">
+                <div class="skill-icon">🔧</div>
+                <div class="skill-title">Backend Development</div>
+            </div>
+            <p class="skill-description">Développement d'APIs robustes et scalables avec Node.js, gestion de bases de données et architecture microservices.</p>
+            <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">MongoDB</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-header">
+                <div class="skill-icon">📱</div>
+                <div class="skill-title">Responsive Design</div>
+            </div>
+            <p class="skill-description">Création d'interfaces adaptatifs pour tous les écrans, optimisation mobile-first et performance sur tous les dispositifs.</p>
+            <div class="skill-tags">
+                <span class="skill-tag">Mobile-First</span>
+                <span class="skill-tag">CSS Grid</span>
+                <span class="skill-tag">Flexbox</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-header">
+                <div class="skill-icon">🚀</div>
+                <div class="skill-title">Performance & SEO</div>
+            </div>
+            <p class="skill-description">Optimisation des performances web, référencement naturel et bonnes pratiques pour des applications rapides et accessibles.</p>
+            <div class="skill-tags">
+                <span class="skill-tag">Lighthouse</span>
+                <span class="skill-tag">Web Vitals</span>
+                <span class="skill-tag">A11y</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <div class="project-card reveal">
-                 <div class="timeline-marker"></div>
-                 <div class="card-content">
-                    <div class="project-image">
-                        <img src="YOUR_PROJECT_1_IMAGE_URL" alt="Your Project 1 Title">
+<section class="projects" id="projects">
+    <h2 class="section-title">Mes Projets</h2>
+    <div class="projects-timeline">
+        <div class="project-item">
+            <div class="project-card">
+                <div class="project-image">🎮</div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year">2024</span>
+                        <span class="project-status status-in-progress">En cours</span>
                     </div>
-                    <div class="project-info">
-                        <span class="project-year">2023 - Present</span> <!-- Consider making this YOUR_PROJECT_1_YEAR -->
-                        <h2>YOUR_PROJECT_1_TITLE</h2>
-                        <p>YOUR_PROJECT_1_DESCRIPTION (focus on challenge and solution)</p>
-                        <div class="tags">
-                            <span>React</span><span>Node.js</span><span>Web Sockets</span><span>UI/UX</span> <!-- Consider making these YOUR_PROJECT_1_TAGS -->
-                        </div> <!-- Consider making these YOUR_PROJECT_1_TAGS -->
-                        <a href="YOUR_PROJECT_1_LINK" class="project-link" target="_blank">View Project →</a>
+                    <h3 class="project-title">Application Gaming Interactive</h3>
+                    <p class="project-description">Plateforme de jeu en ligne avec système de matchmaking en temps réel, chat intégré et statistiques avancées. Interface moderne avec animations fluides et effets 3D.</p>
+                    <div class="project-footer">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">WebRTC</span>
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">Three.js</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet</a>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="project-card reveal">
-                 <div class="timeline-marker"></div>
-                 <div class="card-content">
-                     <div class="project-image">
-                        <img src="YOUR_PROJECT_2_IMAGE_URL" alt="Your Project 2 Title">
+        <div class="project-item">
+            <div class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-status status-completed">Terminé</span>
                     </div>
-                    <div class="project-info">
-                        <span class="project-year">2021 - 2022</span> <!-- Consider making this YOUR_PROJECT_2_YEAR -->
-                        <h2>YOUR_PROJECT_2_TITLE</h2>
-                        <p>YOUR_PROJECT_2_DESCRIPTION (elaborate on tech stack and unique features)</p>
-                         <div class="tags">
-                            <span>Vue.js</span><span>TypeScript</span><span>Figma</span><span>Firebase</span> <!-- Consider making these YOUR_PROJECT_2_TAGS -->
-                        </div> <!-- Consider making these YOUR_PROJECT_2_TAGS -->
-                        <a href="YOUR_PROJECT_2_LINK" class="project-link" target="_blank">Case Study →</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card reveal">
-                 <div class="timeline-marker"></div>
-                 <div class="card-content">
-                     <div class="project-image">
-                        <img src="YOUR_PROJECT_3_IMAGE_URL" alt="Your Project 3 Title">
-                    </div>
-                    <div class="project-info">
-                        <span class="project-year">2019 - 2020</span> <!-- Consider making this YOUR_PROJECT_3_YEAR -->
-                        <h2>YOUR_PROJECT_3_TITLE</h2>
-                        <p>YOUR_PROJECT_3_DESCRIPTION (showcasing frontend skills, animations, state management)</p>
-                         <div class="tags">
-                            <span>Three.js</span><span>GSAP</span><span>Frontend</span><span>WebGL</span> <!-- Consider making these YOUR_PROJECT_3_TAGS -->
-                        </div> <!-- Consider making these YOUR_PROJECT_3_TAGS -->
-                         <a href="YOUR_PROJECT_3_LINK" class="project-link" target="_blank">Live Demo →</a>
+                    <h3 class="project-title">Dashboard Analytics Avancé</h3>
+                    <p class="project-description">Interface de visualisation de données complexes avec graphiques interactifs, filtres dynamiques et export multi-format. Intégration d'APIs multiples et mise à jour en temps réel.</p>
+                    <div class="project-footer">
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">WebSockets</span>
+                        </div>
+                        <a href="#" class="project-link">Voir la démo</a>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Add more project cards as needed -->
-
-        </section>
-
-        <section id="about" class="reveal">
-            <h2>// About Me</h2>
-            <div class="about-content">
-                <p>I'm a passionate Creative Developer with [YOUR_YEARS_OF_EXPERIENCE] years of experience, specializing in [YOUR_SPECIALIZATION]. I thrive on [YOUR_PASSION_OR_WHAT_YOU_THRIVE_ON].</p>
-                <p>My focus is on [YOUR_FOCUS_AREA_1], [YOUR_FOCUS_AREA_2], and [YOUR_FOCUS_AREA_3]. I am continuously learning and experimenting with new tools and techniques.</p>
-                <!-- Add more about yourself -->
-                 <div class="skills-overview">
-                    <h3>Core Skills:</h3>
-                    <span>HTML5 / CSS3 / SCSS</span> <!-- Replace with YOUR actual skills -->
-                    <span>UI/UX Principles</span> <!-- Replace with YOUR actual skills -->
-                    <span>Performance Optimization</span> <!-- Replace with YOUR actual skills -->
-                    <span>Git</span> <!-- Replace with YOUR actual skills -->
-                 </div>
+        <div class="project-item">
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-status status-completed">Terminé</span>
+                    </div>
+                    <h3 class="project-title">E-commerce Full-Stack</h3>
+                    <p class="project-description">Plateforme de vente complète avec gestion d'inventaire intelligent, système de paiement sécurisé, recommandations IA et interface d'administration avancée.</p>
+                    <div class="project-footer">
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                        <a href="#" class="project-link">Étude de cas</a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section id="contact" class="reveal">
-            <h2>// Let's Connect</h2>
-            <p>Interested in collaborating or have a question? Feel free to reach out.</p>
-            <a href="mailto:lucasm54800@gmail.com" class="email-link">lucasm54800@gmail.com</a> <!-- Consider making this YOUR_EMAIL_ADDRESS --> <!-- Consider making this YOUR_EMAIL_ADDRESS -->
-            <div class="social-links">
-                <a href="YOUR_GITHUB_PROFILE_URL" target="_blank" title="GitHub">
-                    <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                </a>
-                <a href="YOUR_LINKEDIN_PROFILE_URL" target="_blank" title="LinkedIn">
-                    <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    </svg>
-                </a>
-                 <a href="YOUR_TWITTER_PROFILE_URL" target="_blank" title="Twitter / X">
-                     <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.93l-3.866-5.076L2.6 15.25H.146l5.36-6.142L0 .75h5.06l3.866 5.076L12.6.75zm-.86 13.028h1.36L4.322 2.16h-1.362l8.08 11.616z"/>
-                    </svg>
-                 </a>
-                <!-- Add other relevant links -->
+        <div class="project-item">
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year">2022</span>
+                        <span class="project-status status-completed">Terminé</span>
+                    </div>
+                    <h3 class="project-title">Portfolio Créatif 3D</h3>
+                    <p class="project-description">Site portfolio immersif avec environnement 3D interactif, physique réaliste et animations procedurales. Optimisé pour les performances sur mobile.</p>
+                    <div class="project-footer">
+                        <div class="project-tags">
+                            <span class="tag">Three.js</span>
+                            <span class="tag">GLSL</span>
+                            <span class="tag">Cannon.js</span>
+                            <span class="tag">GSAP</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le site</a>
+                    </div>
+                </div>
             </div>
-        </section>
-
-    </main>
-
-    <footer class="main-footer-bottom">
-        <p> 2024 Lucas Martinati. Designed & Built with <span style="color: #ff6b6b;">♥</span></p>
-    </footer>
-
+        </div>
+    </div>
+</section>
 </body>
+<script src="js/script.js"></script>
 </html>
