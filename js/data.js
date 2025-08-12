@@ -6,7 +6,7 @@ const developer = {
   name: 'Lucas Martinati',
   status: 'Étudiant & Développeur',
   passion: 'Créer des expériences digitales uniques',
-  skills: ['JavaScript', 'React', 'Node.js', 'UI/UX'],
+  skills: ['html', 'css', 'js', 'python', 'UI/UX'],
   mindset: 'Apprendre constamment et innover',
   currentFocus: 'Technologies modernes & Design créatif',
   availability: true,
