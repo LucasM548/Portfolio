@@ -51,91 +51,70 @@ function renderCodeBio(dev) {
 // ——— Compétences ———
 const skills = [
   {
-    icon: '⚡',
-    title: 'JavaScript ES6+',
+    icon: '🌐',
+    title: 'Sites Web',
     description:
-      "Développement moderne avec les dernières fonctionnalités JavaScript, programmation asynchrone et manipulation du DOM avancée.",
-    tags: ['ES6+', 'Async/Await', 'APIs']
-  },
-  {
-    icon: '⚛️',
-    title: 'React & Ecosystem',
-    description:
-      "Création d'interfaces utilisateur dynamiques et réactives avec React, Redux et les hooks modernes pour une expérience optimale.",
-    tags: ['Hooks', 'Redux', 'Context API']
+      "Création de sites web modernes et responsives avec HTML, CSS et JavaScript.",
+    tags: ['HTML', 'CSS', 'JavaScript']
   },
   {
     icon: '🎨',
     title: 'UI/UX Design',
     description:
       "Conception d'expériences utilisateur intuitives et esthétiques, de la recherche utilisateur au prototype interactif.",
-    tags: ['Figma', 'Prototyping', 'User Research']
-  },
-  {
-    icon: '🔧',
-    title: 'Backend Development',
-    description:
-      "Développement d'APIs robustes et scalables avec Node.js, gestion de bases de données et architecture microservices.",
-    tags: ['Node.js', 'Express', 'MongoDB']
+    tags: ['Design']
   },
   {
     icon: '📱',
     title: 'Responsive Design',
     description:
-      "Création d'interfaces adaptatifs pour tous les écrans, optimisation mobile-first et performance sur tous les dispositifs.",
-    tags: ['Mobile-First', 'CSS Grid', 'Flexbox']
-  },
-  {
-    icon: '🚀',
-    title: 'Performance & SEO',
-    description:
-      'Optimisation des performances web, référencement naturel et bonnes pratiques pour des applications rapides et accessibles.',
-    tags: ['Lighthouse', 'Web Vitals', 'A11y']
+      "Création d'interfaces adaptatifs pour tous les écrans, optimisation pour mobile et performance sur tous les dispositifs.",
+    tags: ['Mobile', 'Performance']
   }
 ];
 
 // ——— Projets ———
 const projects = [
   {
-    image: '🎮',
+    image: '🍐',
+    year: '2023',
+    status: { label: 'Terminé', className: 'status-completed' },
+    title: 'Pear Search',
+    description:
+      "Le meilleur moteur de recherche de tous les temps, il vous permettra de trouver ce que vous cherchez tout en vous laissant flâner sur le web. Vous pouvez oublier vos données personnelles, qui seront stockées directement sur nos serveurs pour vous simplifier la vie.",
+    tags: ['html', 'css', 'js'],
+    link: { href: 'https://lucasm548.github.io/Pear-Search/', text: 'Voir le site' }
+  },
+  {
+    image: '📥',
     year: '2024',
-    status: { label: 'En cours', className: 'status-in-progress' },
-    title: 'Application Gaming Interactive',
+    status: { label: 'Terminé', className: 'status-completed' },
+    title: 'Applications Automatical Installer',
     description:
-      "Plateforme de jeu en ligne avec système de matchmaking en temps réel, chat intégré et statistiques avancées. Interface moderne avec animations fluides et effets 3D.",
-    tags: ['React', 'WebRTC', 'Socket.io', 'Three.js'],
-    link: { href: '#', text: 'Voir le projet' }
+      "Permet l’installation automatique des applications sélectionnées.",
+    tags: ['Python', 'PyQt5', 'requests', 'json'],
+    link: { href: 'https://github.com/LucasM548/Applications_Automatical_Installer', text: 'voir le Repository' }
   },
   {
-    image: '📊',
-    year: '2023',
+    image: '💎',
+    year: '2025',
     status: { label: 'Terminé', className: 'status-completed' },
-    title: 'Dashboard Analytics Avancé',
+    title: 'Stones Collection',
     description:
-      "Interface de visualisation de données complexes avec graphiques interactifs, filtres dynamiques et export multi-format. Intégration d'APIs multiples et mise à jour en temps réel.",
-    tags: ['Vue.js', 'D3.js', 'Chart.js', 'WebSockets'],
-    link: { href: '#', text: 'Voir la démo' }
+      "Site pour stockée la liste des pierres que ma copine possède.",
+    tags: ['html', 'css', 'js', "base de données", "API"],
+    link: { href: 'https://stones-collection.netlify.app/', text: 'Voir le site' }
   },
   {
-    image: '🌐',
-    year: '2023',
+    image: '🎮',
+    year: '2025',
     status: { label: 'Terminé', className: 'status-completed' },
-    title: 'E-commerce Full-Stack',
+    title: 'Report with WintrChess',
     description:
-      "Plateforme de vente complète avec gestion d'inventaire intelligent, système de paiement sécurisé, recommandations IA et interface d'administration avancée.",
-    tags: ['Next.js', 'Stripe', 'PostgreSQL', 'Redis'],
-    link: { href: '#', text: 'Étude de cas' }
+      "Transférez facilement vos parties d’échecs depuis Lichess et Chess.com vers WintrChess pour une analyse approfondie. Disponible sous forme de script Tampermonkey et d’extension Chrome.",
+    tags: ['Chrome extension', 'js'],
+    link: { href: 'https://chromewebstore.google.com/detail/free-analyze-with-wintrch/ljjbgidgpkhjenpgpjfjidfflnelmpan', text: 'Chrome web store' }
   },
-  {
-    image: '🎨',
-    year: '2022',
-    status: { label: 'Terminé', className: 'status-completed' },
-    title: 'Portfolio Créatif 3D',
-    description:
-      'Site portfolio immersif avec environnement 3D interactif, physique réaliste et animations procedurales. Optimisé pour les performances sur mobile.',
-    tags: ['Three.js', 'GLSL', 'Cannon.js', 'GSAP'],
-    link: { href: '#', text: 'Voir le site' }
-  }
 ];
 
 // ——— Rendu ———
