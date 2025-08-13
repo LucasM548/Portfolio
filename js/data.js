@@ -118,6 +118,17 @@ const projects = [
     tags: ['Chrome extension', 'js'],
     link: { href: 'https://chromewebstore.google.com/detail/free-analyze-with-wintrch/ljjbgidgpkhjenpgpjfjidfflnelmpan', text: 'Chrome web store' }
   },
+  {
+    image: '💳',
+    imageUrl: 'img/Flashcards cover.png',
+    year: '2025',
+    status: { label: 'Terminé', className: 'status-completed' },
+    title: 'Flashcards de Première & Terminale',
+    description:
+      "Site de vente de nos flashcards réalisés en premières et en terminales.",
+    tags: ['html', 'css', 'js', 'API', 'PayPal'],
+    link: { href: 'https://lucasm548.github.io/Flashcard/', text: 'Voir le site' }
+  },
 ];
 
 // ——— Rendu ———
