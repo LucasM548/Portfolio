@@ -77,7 +77,7 @@ const skills = [
 const projects = [
   {
     image: '🍐',
-    imageUrl: 'img/pear search cover.png',
+    imageUrl: 'img/Pear Search cover.png',
     year: '2023',
     status: { label: 'Terminé', className: 'status-completed' },
     title: 'Pear Search',
@@ -88,7 +88,7 @@ const projects = [
   },
   {
     image: '📥',
-    imageUrl: 'img/applications automatical installer cover.png',
+    imageUrl: 'img/Applications Automatical Installer cover.png',
     year: '2024',
     status: { label: 'Terminé', className: 'status-completed' },
     title: 'Applications Automatical Installer',
@@ -109,7 +109,7 @@ const projects = [
   },
   {
     image: '🎮',
-    imageUrl: 'img/report with wintrchess cover.png',
+    imageUrl: 'img/Report with WintrChess cover.png',
     year: '2025',
     status: { label: 'Terminé', className: 'status-completed' },
     title: 'Report with WintrChess',
