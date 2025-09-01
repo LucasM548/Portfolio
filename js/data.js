@@ -98,7 +98,7 @@ const projects = [
     link: { href: 'https://github.com/LucasM548/Applications_Automatical_Installer', text: 'voir le Repository' }
   },
   {
-    image: '💎💎',
+    image: '💎',
     year: '2025',
     status: { label: 'Terminé', className: 'status-completed' },
     title: 'Stones Collection',
